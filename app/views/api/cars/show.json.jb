@@ -1,0 +1,9 @@
+{
+  id: @car.id,
+  year: @car.year,
+  make: @car.make,
+  model: @car.model,
+  color: @car.color,
+  mileage: @car.mileage,
+  lot_id: @car.lot_id
+}
