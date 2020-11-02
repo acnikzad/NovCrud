@@ -13,11 +13,11 @@ Rails.application.routes.draw do
     patch "/cars/:id" => "cars#update"
     delete "/cars/:id" => "cars#destroy"
 
-    get "/lots" => "lots#index"
-    get "/lots/:id" => "lots#show"
-    post "/lots" => "lots#create"
-    patch "/lots/:id" => "lots#update"
-    delete "lots/:id" => "lots#destroy"
+    get "/lots" => "lot#index"
+    get "/lots/:id" => "lot#show"
+    post "/lots" => "lot#create"
+    patch "/lots/:id" => "lot#update"
+    delete "lots/:id" => "lot#destroy"
 
   end
 end

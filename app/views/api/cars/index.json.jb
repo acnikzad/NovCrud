@@ -1,4 +1,4 @@
-@car.map do |car|
+@cars.map do |car|
   {
     id: car.id,
     year: car.year,

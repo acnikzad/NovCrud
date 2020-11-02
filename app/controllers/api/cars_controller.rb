@@ -6,7 +6,7 @@ class Api::CarsController < ApplicationController
   end
 
   def show
-    the_id =params[:id]
+    the_id = params[:id]
     @car = Car.find_by(id: the_id)
     render 'show.json.jb'
   end
@@ -26,7 +26,7 @@ class Api::CarsController < ApplicationController
 
   def update
     the_id = params[:id]
-    @car = Car.find_buy(id: the_id)
+    @car = Car.find_by(id: the_id)
     @car.year = params[:year] || @car.year
     @car.make = params[:make] || @car.make
     @car.model = params[:model] || @car.model

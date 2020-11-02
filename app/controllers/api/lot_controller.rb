@@ -7,7 +7,7 @@ class Api::LotController < ApplicationController
 
   def show
     the_id = params[:id]
-    @lot = Lot.find_by[id: the_id]
+    @lot = Lot.find_by(id: the_id)
     render 'show.json.jb'
   end
 
@@ -40,5 +40,4 @@ class Api::LotController < ApplicationController
 
     render 'destroy.json.jb'
   end
-
 end

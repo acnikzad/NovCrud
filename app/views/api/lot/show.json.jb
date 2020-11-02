@@ -1,0 +1,6 @@
+{
+  id: @lot.id,
+  name: @lot.name,
+  location: @lot.location,
+  phone: @lot.phone
+}
