@@ -39,7 +39,7 @@ class Api::CarsController < ApplicationController
   end
 
   def destroy
-    @car =Car.find_by(id: paras[:id])
+    @car =Car.find_by(id: params[:id])
 
     @car.destroy
     @car.save
